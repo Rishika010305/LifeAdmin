@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#172033">
+<link rel="manifest" href="manifest.json">
+<title>LifeAdmin | Personal Digital Command Center</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <div class="brand-logo">L</div>
+    <div><h1>LifeAdmin</h1><p>Personal Digital Command Center</p></div>
+  </div>
+  <div class="top-actions">
+    <div class="search-wrap"><span>⌕</span><input id="global-search" placeholder="Search LifeAdmin..."></div>
+    <button class="icon-button" id="notification-btn" title="Enable notifications">🔔</button>
+    <div class="user-profile"><div class="user-avatar">U</div><div><strong id="user-name">User</strong><span>Personal Account</span></div></div>
+  </div>
+</header>
+<div class="app-container">
+<aside class="sidebar">
+<nav>
+  <div class="navigation-label">MAIN</div>
+  <button class="nav-item active" data-page="dashboard"><span>Dashboard</span></button>
+  <div class="navigation-label">MANAGE</div>
+  <button class="nav-item" data-page="documents"><span>Documents</span></button>
+  <button class="nav-item" data-page="bills"><span>Bills & Payments</span></button>
+  <button class="nav-item" data-page="subscriptions"><span>Subscriptions</span></button>
+  <button class="nav-item" data-page="mobile"><span>Mobile & Recharge</span></button>
+  <button class="nav-item" data-page="warranties"><span>Warranties</span></button>
+  <button class="nav-item" data-page="appointments"><span>Appointments</span></button>
+  <div class="navigation-label">INSIGHTS</div>
+  <button class="nav-item" data-page="timeline"><span>Life Timeline</span></button>
+  <button class="nav-item" data-page="analytics"><span>Analytics</span></button>
+  <button class="nav-item" data-page="assistant"><span>Life Assistant</span></button>
+  <div class="navigation-label">SYSTEM</div>
+  <button class="nav-item" data-page="settings">⚙️ <span>Settings</span></button>
+</nav>
+</aside>
+<main class="content" id="app-content"></main>
+</div>
+<div id="toast-container"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
